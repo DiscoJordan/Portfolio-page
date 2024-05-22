@@ -13,10 +13,17 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
+    scroll-behavior: smooth;
 }
-.bold{
+
+.order {
+    order: 1;
+}
+
+.bold {
     font-weight: 600;
 }
+
 .orange {
     color: var(--orange);
 }
@@ -30,8 +37,9 @@ body {
 }
 
 .header {
+    background-color: rgba(0, 0, 0, 0.582);
     color: var(--white);
-    padding: 20px 50px;
+    padding: 5px 50px;
     position: fixed;
     width: 100%;
     font-size: 1.2em;
@@ -44,14 +52,27 @@ body {
     align-items: center;
 }
 
+
 .header__logo img {
     width: 80px;
 }
 
 .header__anchors {
+    font-weight: 600;
     display: flex;
     gap: 100px;
     list-style: none;
+}
+
+.header__anchors a {
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.1s ease-in;
+}
+
+.header__anchors a:hover {
+    color: var(--orange);
+    text-decoration: none;
 }
 
 .main {
@@ -59,11 +80,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--backgound-color-main)
+    background-color: var(--black)
 }
 
 .container {
-    max-width: 1200px;
+    width: 1200px;
+    height: 100%;
 }
 
 .main__info {
@@ -78,22 +100,155 @@ body {
     flex-direction: column;
     gap: 20px;
 }
-.main__name{
+
+.main__name {
     font-size: 3em;
 }
-.about{
-    color: var(--white) ;
-    background-color: var(--black);
+
+.about {
+    color: var(--black);
+    background-color: var(--white);
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    align-items: flex-start;
+
 }
-.wrapper{
+
+.wrapper {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 350px 4fr;
 }
-.about__title{
+
+.about__section {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    padding-bottom: 5em;
+}
+
+.title {
+    display: inline-block;
+    color: var(--orange);
+    padding: 30px;
     position: sticky;
-    top: 0;
+    top: 40%;
+    font-size: 2.2em;
+}
+
+.about__numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__number-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__number h2 {
+    font-size: 6em;
+    color: var(--orange);
+}
+
+.about__description p {
+    font-size: 1.5em;
+}
+
+.about__paragraph p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.skills {
+    color: var(--white);
+    background-color: var(--backgound-color-main);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skills__section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding-bottom: 5em;
+}
+
+.skills__section span {
+    font-size: 1.5em;
+    padding: 1em;
+    text-align: center;
+    transition: all ease-in-out 0.2s;
+}
+
+.skills__section span:hover {
+    flex-grow: 2;
+    transform: scale(1.5);
+    color: var(--orange);
+}
+
+.portfolio {
+    color: var(--white);
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.portfolio__section {
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.portfolio__project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.portfolio__image {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.portfolio__image img {
+    border-radius: 20px;
+    max-width: 100%;
+}
+
+.portfolio__name {
+    font-size: 2em;
+}
+
+.portfolio__tools {
+    display: flex;
+    gap: 1em;
+}
+
+.portfolio__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2em;
+    gap: 1em;
+}
+.portfolio__buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+.portfolio__button{
+    text-align: center;
+    width: 100%;
+   border: 2px solid var(--black);
+   padding: 5px 10px;
+   border-radius: 100px;
+   transition: all 0.1s ease-in;
+}
+.portfolio__button:hover {
+   color: var(--white);
+   background-color: var(--black);
 }
