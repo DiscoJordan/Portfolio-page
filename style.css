@@ -85,13 +85,17 @@ body {
 
 .container {
     width: 1200px;
-    height: 100%;
+
 }
 
 .main__info {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.main__info img {
+    width: 500px;
 }
 
 .main__content {
@@ -123,7 +127,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 3em;
-    padding-bottom: 5em;
+    padding-bottom: 122px;
 }
 
 .title {
@@ -171,7 +175,7 @@ body {
 .skills__section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    padding-bottom: 5em;
+    padding-bottom: 122px;
 }
 
 .skills__section span {
@@ -200,7 +204,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4em;
-    padding-bottom: 5em;
+    padding-bottom: 122px;
 }
 
 .portfolio__project {
@@ -262,14 +266,17 @@ body {
     color: var(--white);
     background-color: var(--black);
 }
-.white{
+
+.white {
     border: 2px solid var(--white);
     color: var(--white);
 }
+
 .white:hover {
     color: var(--black);
     background-color: var(--white);
 }
+
 .contacts {
     color: var(--white);
     background-color: var(--backgound-color-main);
@@ -277,12 +284,48 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
-.contacts__section{
+
+.contacts__section {
     display: flex;
     flex-direction: column;
     gap: 2em;
+    padding-bottom: 122px;
 }
-.contacts__title{
-    font-size: 4em;
-    text-align: center;
+
+.contacts__links {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.contacts__links img {
+    width: 2em;
+}
+
+.contacts__icon {
+    transition: all 0.1s ease-in;
+    filter: invert(73%) sepia(41%) saturate(4446%) hue-rotate(357deg) brightness(101%) contrast(107%);
+}
+
+.contacts__icon:hover {
+    transition: all 0.1s ease-in;
+
+    filter: invert(100%) sepia(18%) saturate(2%) hue-rotate(253deg) brightness(107%) contrast(101%);
+}
+
+.contacts__email {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    gap: 30px;
+}
+
+.contacts__link {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.contacts__link:hover {
+    color: var(--white);
 }
