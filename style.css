@@ -200,6 +200,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4em;
+    padding-bottom: 5em;
 }
 
 .portfolio__project {
@@ -235,20 +236,53 @@ body {
     font-size: 1.2em;
     gap: 1em;
 }
-.portfolio__buttons{
+
+.buttons {
     display: flex;
     justify-content: space-between;
     gap: 1em;
 }
-.portfolio__button{
+
+.btn {
+    width: 100%;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.button {
     text-align: center;
     width: 100%;
-   border: 2px solid var(--black);
-   padding: 5px 10px;
-   border-radius: 100px;
-   transition: all 0.1s ease-in;
+    border: 2px solid var(--black);
+    padding: 5px 10px;
+    border-radius: 100px;
+    transition: all 0.1s ease-in;
 }
-.portfolio__button:hover {
-   color: var(--white);
-   background-color: var(--black);
+
+.button:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+.white{
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+.white:hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+.contacts {
+    color: var(--white);
+    background-color: var(--backgound-color-main);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contacts__section{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.contacts__title{
+    font-size: 4em;
+    text-align: center;
 }
