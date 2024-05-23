@@ -17,24 +17,45 @@
     <header class="header">
         <nav class="header__navigation">
             <div class="header__logo">
-                <img src="images/logo.png" alt="logo">
+                <a href="#main" >
+                    <img src="images/logo.png" alt="logo">
+                </a>
             </div>
             <ul class="header__anchors">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#contacts">CONTACTS</a></li>
             </ul>
+            <div class="burger">
+                <span>|||</span>
+                <ul class="burger__content">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contacts">CONTACTS</a></li>
+                </ul>
+              </div>
+              
         </nav>
     </header>
-    <section class="main">
+    <section class="main" id="main">
         <div class="container">
             <div class="main__info">
-                <img src="images/me.JPG" alt="Author image" class="main__image">
+                <div class="main__image">
+                    <img src="images/me.JPG" alt="Author image" class="main__image">
+                </div>
+                
                 <div class="main__content">
                     <p class="orange bold">Hello</p>
                     <h2 class="main__name">I'm Gleb, <br>Full Stack Developer</h2>
                     <p class="gray">Experienced in building dynamic web applications.</p>
                 </div>
+            </div>
+            <div class="main__button">
+                <a class="btn" href="#about">
+                    <div class="button white">
+                        <p>ABOUT</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -226,39 +247,55 @@
                 <div class="contacts__section">
                     <div class="contacts__links">
                         <h2 class="contacts__title">Get in touch:</h2>
-                        <a class="contacts__icon" href=""><img src="images/github.svg" alt="github"></a>
-                        <a class="contacts__icon" href=""><img src="images/linkedin.svg" alt="linkedin"></a>
-                        <a class="contacts__icon" href=""><img src="images/tg.svg" alt="Telegram"></a>
-                        <a class="contacts__icon" href=""><img src="images/inst.svg" alt="instagram"></a>
-                        
+                        <a class="contacts__icon" target="_blank" href="https://github.com/DiscoJordan"><img
+                                src="images/github.svg" alt="github"></a>
+                        <a class="contacts__icon" target="_blank" href=https://www.linkedin.com/in/discojordan/"><img
+                                src="images/linkedin.svg" alt="linkedin"></a>
+                        <a class="contacts__icon" target="_blank" href="https://t.me/discojordan"><img src="images/tg.svg" alt="Telegram"></a>
+                        <a class="contacts__icon" target="_blank" href="https://www.instagram.com/discojordan/"><img src="images/inst.svg"
+                                alt="instagram"></a>
+
                     </div>
                     <div class="contacts__email">
                         <h2 class="contacts__title">Email:</h2>
                         <a class="contacts__link" href="mailto:discojordan23@gmail.com">discojordan23@gmail.com</a>
                     </div>
-                    
-                   
+
+
                     <h3>If you have any questions or suggestions, please contact me using the form convenient for you.
                         If I didn`t answer you within 24 hours, write or call me on Telegram. <br><br>
                         Best regards, Gleb.
                     </h3>
                     <div class="buttons">
-                        <a class="btn" href="">
-                            <div class="button white">
-                                <p>TELEGRAM</p>
-                            </div>
-                        </a>
-                        <a class="btn" href="">
-                            <div class="button white">
-                                <p>EMAIL</p>
-                            </div>
-                        </a>
+                        <a class="btn" target="_blank" href="https://t.me/discojordan">
+                            <div class=" button white">
+                            <p>TELEGRAM</p>
                     </div>
-
+                    </a>
+                    <a class="btn" target="_blank" href="mailto:discojordan23@gmail.com">
+                            <div class=" button white">
+                        <p>EMAIL</p>
                 </div>
+                </a>
             </div>
+
+        </div>
+        </div>
         </div>
     </section>
+    <footer class="footer">
+        <div class="footer__socialmedia">
+            <a class="contacts__icon footer__icon" target="_blank" href="https://github.com/DiscoJordan"><img src="images/github.svg"
+                    alt="github"></a>
+            <a class="contacts__icon footer__icon" target="_blank" href="https://www.linkedin.com/in/discojordan/"><img
+                    src="images/linkedin.svg" alt="linkedin"></a>
+            <a class="contacts__icon footer__icon" target="_blank" href="https://t.me/discojordan"><img src="images/tg.svg" alt="Telegram"></a>
+            <a class="contacts__icon footer__icon" target="_blank" href="https://www.instagram.com/discojordan/"><img src="images/inst.svg" alt="instagram"></a>
+        </div>
+        <div class="footer__rights">
+            <p>Copyright © Gleb Murawicki · 2022-2024</p>
+        </div>
+    </footer>
 </body>
 
 </html>
