@@ -17,24 +17,19 @@
     <header class="header">
         <nav class="header__navigation">
             <div class="header__logo">
-                <a href="#main" >
+                <a href="#main">
                     <img src="images/logo.png" alt="logo">
                 </a>
+            </div>
+            <div class="header_burger">
+                <span></span>
             </div>
             <ul class="header__anchors">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#portfolio">PORTFOLIO</a></li>
                 <li><a href="#contacts">CONTACTS</a></li>
             </ul>
-            <div class="burger">
-                <span>|||</span>
-                <ul class="burger__content">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#portfolio">PORTFOLIO</a></li>
-                    <li><a href="#contacts">CONTACTS</a></li>
-                </ul>
-              </div>
-              
+
         </nav>
     </header>
     <section class="main" id="main">
@@ -43,11 +38,12 @@
                 <div class="main__image">
                     <img src="images/me.JPG" alt="Author image" class="main__image">
                 </div>
-                
+
                 <div class="main__content">
                     <p class="orange bold">Hello</p>
                     <h2 class="main__name">I'm Gleb, <br>Full Stack Developer</h2>
-                    <p class="gray">Experienced in building dynamic web applications.</p>
+                    <p class="gray">Experienced in building dynamic web applications.<span class="multiple-text"></span>
+                    </p>
                 </div>
             </div>
             <div class="main__button">
@@ -251,9 +247,10 @@
                                 src="images/github.svg" alt="github"></a>
                         <a class="contacts__icon" target="_blank" href=https://www.linkedin.com/in/discojordan/"><img
                                 src="images/linkedin.svg" alt="linkedin"></a>
-                        <a class="contacts__icon" target="_blank" href="https://t.me/discojordan"><img src="images/tg.svg" alt="Telegram"></a>
-                        <a class="contacts__icon" target="_blank" href="https://www.instagram.com/discojordan/"><img src="images/inst.svg"
-                                alt="instagram"></a>
+                        <a class="contacts__icon" target="_blank" href="https://t.me/discojordan"><img
+                                src="images/tg.svg" alt="Telegram"></a>
+                        <a class="contacts__icon" target="_blank" href="https://www.instagram.com/discojordan/"><img
+                                src="images/inst.svg" alt="instagram"></a>
 
                     </div>
                     <div class="contacts__email">
@@ -269,33 +266,39 @@
                     <div class="buttons">
                         <a class="btn" target="_blank" href="https://t.me/discojordan">
                             <div class=" button white">
-                            <p>TELEGRAM</p>
-                    </div>
-                    </a>
-                    <a class="btn" target="_blank" href="mailto:discojordan23@gmail.com">
+                                <p>TELEGRAM</p>
+                            </div>
+                        </a>
+                        <a class="btn" target="_blank" href="mailto:discojordan23@gmail.com">
                             <div class=" button white">
-                        <p>EMAIL</p>
-                </div>
-                </a>
-            </div>
+                                <p>EMAIL</p>
+                            </div>
+                        </a>
+                    </div>
 
-        </div>
-        </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer class="footer">
         <div class="footer__socialmedia">
-            <a class="contacts__icon footer__icon" target="_blank" href="https://github.com/DiscoJordan"><img src="images/github.svg"
-                    alt="github"></a>
+            <a class="contacts__icon footer__icon" target="_blank" href="https://github.com/DiscoJordan"><img
+                    src="images/github.svg" alt="github"></a>
             <a class="contacts__icon footer__icon" target="_blank" href="https://www.linkedin.com/in/discojordan/"><img
                     src="images/linkedin.svg" alt="linkedin"></a>
-            <a class="contacts__icon footer__icon" target="_blank" href="https://t.me/discojordan"><img src="images/tg.svg" alt="Telegram"></a>
-            <a class="contacts__icon footer__icon" target="_blank" href="https://www.instagram.com/discojordan/"><img src="images/inst.svg" alt="instagram"></a>
+            <a class="contacts__icon footer__icon" target="_blank" href="https://t.me/discojordan"><img
+                    src="images/tg.svg" alt="Telegram"></a>
+            <a class="contacts__icon footer__icon" target="_blank" href="https://www.instagram.com/discojordan/"><img
+                    src="images/inst.svg" alt="instagram"></a>
         </div>
         <div class="footer__rights">
             <p>Copyright © Gleb Murawicki · 2022-2024</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
