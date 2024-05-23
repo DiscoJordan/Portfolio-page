@@ -467,6 +467,7 @@ footer {
         font-size: 2em;
     }
 
+
     .about__paragraph p {
         font-size: 1.2em;
         line-height: 1.2em;
@@ -497,8 +498,9 @@ footer {
         width: 30px;
         height: 20px;
         z-index: 3;
-      }
-      .header_burger span {
+    }
+
+    .header_burger span {
         position: absolute;
         background-color: var(--white);
         left: 0;
@@ -507,8 +509,10 @@ footer {
         top: 9px;
         -webkit-transition: 0.2s ease-in-out;
         transition: 0.2s ease-in-out;
-      }
-      .header_burger:before, .header_burger:after {
+    }
+
+    .header_burger:before,
+    .header_burger:after {
         content: "";
         background-color: var(--white);
         position: absolute;
@@ -517,14 +521,17 @@ footer {
         left: 0;
         -webkit-transition: 0.2s ease-in-out;
         transition: 0.2s ease-in-out;
-      }
-      .header_burger:before {
+    }
+
+    .header_burger:before {
         top: 0;
-      }
-      .header_burger:after {
+    }
+
+    .header_burger:after {
         bottom: 0;
-      }
-      .header__anchors {
+    }
+
+    .header__anchors {
         position: fixed;
         display: block;
         top: -100%;
@@ -532,33 +539,37 @@ footer {
         width: 100%;
         height: auto;
         background: rgba(0, 0, 0, 0.582);
-        padding:1em;
+        padding: 1em;
         -webkit-transition: 0.2s ease-in-out;
         transition: 0.2s ease-in-out;
         overflow: auto;
         z-index: 2;
-      }
-      .header__anchors.active {
+    }
+
+    .header__anchors.active {
         top: 100px;
         display: flex;
         flex-direction: column;
         gap: 1em;
         align-items: end;
-      }
-      .header_burger.active:before {
+    }
+
+    .header_burger.active:before {
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
         top: 9px;
-      }
-      .header_burger.active:after {
+    }
+
+    .header_burger.active:after {
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
         bottom: 9px;
-      }
-      .header_burger.active span {
+    }
+
+    .header_burger.active span {
         -webkit-transform: scale(0);
         transform: scale(0);
-      }
+    }
 
 
 }
@@ -596,4 +607,5 @@ footer {
     .title {
         font-size: 1.8em;
     }
+
 }

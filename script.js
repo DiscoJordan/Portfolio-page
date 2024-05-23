@@ -7,9 +7,9 @@ $(document).ready(function (){
 });
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Full-Stack Software Developer', 'Web Developer', 'Mobile Developer', 'Big Daddy'],
-    typeSpeed: 70,
-    backSpeed: 70,
+    strings: ['Experienced in building applications.'],
+    typeSpeed: 50,
+    backSpeed: 50,
     backDelay: 1000,
     loop: true,
 });
