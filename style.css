@@ -33,7 +33,7 @@
 }
 
 body {
-    background-color: var(--backgound-color-main);
+    background-color: var(--black);
 }
 
 .header {
@@ -48,6 +48,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 1;
 }
 
 .main .container {
@@ -68,9 +69,6 @@ body {
     z-index: 3;
 }
 
-.header__logo:hover img {
-    filter: invert(73%) sepia(41%) saturate(4446%) hue-rotate(357deg) brightness(101%) contrast(107%);
-}
 
 .header__anchors {
     font-weight: 600;
@@ -84,11 +82,6 @@ body {
     color: var(--white);
     text-decoration: none;
     transition: all 0.1s ease-in;
-}
-
-.header__anchors a:hover {
-    color: var(--orange);
-    text-decoration: none;
 }
 
 .main {
@@ -219,6 +212,20 @@ body {
     line-height: 2em;
 }
 
+.about__cv .btn .button {
+    font-size: 1.2em;
+    padding: 0.5em;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__icon img {
+    width: 30px;
+    height: 30px;
+}
+
 .skills {
     color: var(--white);
     background-color: var(--backgound-color-main);
@@ -237,12 +244,6 @@ body {
     padding: 1em;
     text-align: center;
     transition: all ease-in-out 0.2s;
-}
-
-.skills__section span:hover {
-    flex-grow: 2;
-    transform: scale(1.5);
-    color: var(--orange);
 }
 
 .portfolio {
@@ -264,6 +265,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
+    transition: all 0.2s ease-in-out;
 }
 
 .portfolio__image {
@@ -315,19 +317,9 @@ body {
     transition: all 0.1s ease-in;
 }
 
-.button:hover {
-    color: var(--white);
-    background-color: var(--black);
-}
-
 .white {
     border: 2px solid var(--white);
     color: var(--white);
-}
-
-.white:hover {
-    color: var(--black);
-    background-color: var(--white);
 }
 
 .contacts {
@@ -359,18 +351,8 @@ body {
     filter: invert(73%) sepia(41%) saturate(4446%) hue-rotate(357deg) brightness(101%) contrast(107%);
 }
 
-.contacts__icon:hover {
-    transition: all 0.1s ease-in;
-
-    filter: invert(100%) sepia(18%) saturate(2%) hue-rotate(253deg) brightness(107%) contrast(101%);
-}
-
 .footer__icon {
     filter: invert(100%) sepia(18%) saturate(2%) hue-rotate(253deg) brightness(107%) contrast(101%);
-}
-
-.footer__icon:hover {
-    filter: invert(73%) sepia(41%) saturate(4446%) hue-rotate(357deg) brightness(101%) contrast(107%);
 }
 
 .contacts__email {
@@ -386,9 +368,6 @@ body {
     color: var(--orange);
 }
 
-.contacts__link:hover {
-    color: var(--white);
-}
 
 footer {
     background-color: var(--black);
@@ -609,4 +588,48 @@ footer {
         font-size: 1.8em;
     }
 
+}
+
+@media (hover: hover) {
+    .header__logo:hover img {
+        filter: invert(73%) sepia(41%) saturate(4446%) hue-rotate(357deg) brightness(101%) contrast(107%);
+    }
+
+    .contacts__link:hover {
+        color: var(--white);
+    }
+
+    .header__anchors a:hover {
+        color: var(--orange);
+        text-decoration: none;
+    }
+    .portfolio__project:hover {
+        transform: scale(0.97);
+    }
+    .skills__section span:hover {
+        flex-grow: 2;
+        transform: scale(1.5);
+        color: var(--orange);
+    }
+    .button:hover {
+        color: var(--white);
+        background-color: var(--black);
+        transform: scale(1.05);
+    }
+    
+    .button:hover img {
+        filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(47deg) brightness(106%) contrast(102%);
+    }
+    .white:hover {
+        color: var(--black);
+        background-color: var(--white);
+    }
+    .contacts__icon:hover {
+        transition: all 0.1s ease-in;
+    
+        filter: invert(100%) sepia(18%) saturate(2%) hue-rotate(253deg) brightness(107%) contrast(101%);
+    }
+    .footer__icon:hover {
+        filter: invert(73%) sepia(41%) saturate(4446%) hue-rotate(357deg) brightness(101%) contrast(107%);
+    }
 }
