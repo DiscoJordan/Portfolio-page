@@ -396,9 +396,7 @@ footer {
         font-size: 4em;
     }
 
-    .portfolio__project {
-        grid-template-columns: 1fr;
-    }
+   
 
     .order {
         order: 0;
@@ -440,7 +438,9 @@ footer {
     .about__description p {
         font-size: 0.8em;
     }
-
+    .portfolio__project {
+        grid-template-columns: 1fr;
+    }
     .about__number h2 {
         font-size: 2em;
     }
