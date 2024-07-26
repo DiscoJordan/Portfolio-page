@@ -287,6 +287,7 @@ body {
 
 .portfolio__tools {
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
 }
 
@@ -606,7 +607,7 @@ footer {
         text-decoration: none;
     }
     .portfolio__project:hover {
-        transform: scale(0.97);
+        transform: scale(1.03);
     }
     .skills__section span:hover {
         flex-grow: 2;
